@@ -17,6 +17,7 @@
     <link rel="prefetch" href="{{@blog.url}}">
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/theme.min.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/bigfoot-default.css"}}" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     {{ghost_head}}
@@ -38,8 +39,7 @@
     <footer>
         <div class="wrapper">
             <div class="copyright">
-                Copyright &copy; <a href="{{@blog.url}}">{{@blog.title}}</a>. 2014 • All rights reserved.<br>
-                <small>Proudly published with <a href="http://ghost.io">Ghost</a>.</small>
+                Copyright &copy; <a href="{{@blog.url}}">Ben McCormick</a>. 2014 • All rights reserved.<br>
             </div>
             <div class="sociallinks">
                 {{> social_footer}}
@@ -49,6 +49,10 @@
 
     {{! JAVASCRIPT }}
     <script async type="text/javascript" src="{{asset "js/theme.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/bigfoot.min.js"}}"></script>
+    <script type="text/javascript">
+        $.bigfoot();
+    </script>
 
 </body>
 </html>

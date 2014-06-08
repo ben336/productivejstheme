@@ -10,6 +10,8 @@ jQuery(document).ready(function(){
 		Rainbow.color();
 	}
 
+    $.bigfoot();
+
 	// SCROLL TO TOP
 	$('.backtotop').click(function(){
 		$("html, body").animate({ scrollTop: 0 }, "slow");

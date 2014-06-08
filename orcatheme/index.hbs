@@ -9,6 +9,8 @@
 		<div class="widget info_widget">
 			{{#if @blog.logo}}
 			<a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+            {{else}}
+            <h1>{{@blog.title}}</h1>
 			{{/if}}
 			<p>{{@blog.description}}</p>
 		</div>
